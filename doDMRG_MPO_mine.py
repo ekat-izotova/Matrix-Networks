@@ -1,3 +1,5 @@
+#TAKEN FROM https://www.tensors.net/p-dmrg
+
 # -*- coding: utf-8 -*-
 # doDMRG_MPO.py
 import numpy as np
