@@ -570,26 +570,3 @@ for N in Narray:
         print("Time array (minutes): {x}".format(x=jnp.float(timearray)))
         print("Number of iterations (at every bond): {x}".format(x=jnp.int(numofitarray)))
         print("*********************************************************************************\n")
-        
-        
-
-
-'''
-import jax
-print(jax.devices())
-
-
-def selu(x, alpha=1.67, lmbda=1.05):
-    return lmbda * jax.numpy.where(x > 0, x, alpha * jax.numpy.exp(x) - alpha)
-
-jax.jit(selu,device=jax.devices()[1])
-key = jax.random.PRNGKey(0)
-x = jax.random.normal(key, (10,))
-print(selu(x))  
-
-
-from jax import numpy as jnp
-print(jnp.ones(3).device_buffer.device())
-
-print(jax.device_put(1, jax.devices()[2]).device_buffer.device())  
-'''
